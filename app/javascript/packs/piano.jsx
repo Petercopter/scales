@@ -14,6 +14,6 @@ class Piano extends React.Component {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Piano />,
-    document.body.appendChild(document.createElement('div')),
+    document.body
   )
 })
