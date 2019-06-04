@@ -1,0 +1,54 @@
+{
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "plugins": [
+    "babel",
+    "import",
+    "jsx-a11y",
+    "react",
+    "security"
+  ],
+
+  "rules": {
+    "comma-dangle": ["off"],
+    "import/extensions": ["off", "never"],
+    "import/no-absolute-path": ["off"],
+    "import/no-duplicates": ["off"],
+    "import/no-extraneous-dependencies": ["off"],
+    "import/no-named-as-default": ["off"],
+    "import/no-named-as-default-member": ["off"],
+    "import/no-unresolved": ["off"],
+    "jsx-a11y/anchor-is-valid": ["off", {
+      "components": [ "Link" ],
+      "aspects": [ "noHref", "invalidHref", "preferButton" ]
+    }],
+    "max-len": ["off"],
+    "no-unexpected-multiline": ["warn"],
+    "react/destructuring-assignment": ["off", "never"],
+    "react/jsx-one-expression-per-line": ["off", "never"],
+    "react/prop-types": ["warn"],
+    "security/detect-child-process": ["error"],
+    "security/detect-eval-with-expression": ["error"],
+    "security/detect-non-literal-regexp": ["error"],
+    "security/detect-unsafe-regex": ["error"],
+    "semi": ["warn", "never"]
+  }
+}
