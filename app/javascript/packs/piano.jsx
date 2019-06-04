@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom'
 class Piano extends React.Component {
   render() {
     return (
-      <h1>Piano</h1>
+      <div class="container-fluid">
+        <h1>Piano</h1>
+      </div>
     )
   }
 }
